@@ -23,12 +23,12 @@
 
 <body class="box-border">
     <!-- display debuger  -->
-    <!-- <div id="dimensions" class=" "></div> -->
+    <div id="dimensions" class="text-red-500"></div>
     <!-- display debuger end -->
 
     <!-- header section  -->
-    <header class=" border-b">
-        <div class="container mx-auto  flex w-full border-b">
+    <header class=" ">
+        <div class="container mx-auto  flex w-full ">
             <div class="w-4/12">
                 <img src="img/logo-pothom-alo.png" alt="" class=" xl:h-[130px] lg:h-[130px]  h-[90px] pr-4">
             </div>
@@ -52,30 +52,38 @@
     </header>
     <!-- header section end -->
      <!-- nav bar  -->
-      <nav class="flex justify-between container mx-auto my-5">
-        <div class="link border">
-            <ul class="">
-                <li class="inline-block mr-5 text-xl"><a href="">সর্বশেষ</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">রাজনীতি</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">বাংলাদেশ</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">অপরাধ</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">বিশ্ব</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">বাণিজ্য</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">মতামত</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">খেলা</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">বিনোদন</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">চাকরি</a></li>
-                <li class="inline-block mr-5 text-xl"><a href="">জীবনযাপন</a></li> 
-            </ul>
-        </div>
-        <div class="action border">
-            <ul>
-                <li class="inline-block mr-7 text-xl"><a href=""><span class="mr-2"><i class="fa-solid fa-magnifying-glass"></i></span>খুঁজুন</a></li>
-                <li class="inline-block mr-7 text-xl"><a href=""><span class="mr-2"><i class="fa-regular fa-window-maximize"></i></span>ই-পেপার</a></li>
-                <li class="inline-block mr-7 text-xl"><a href=""><span class="mr-2"><i class="fa-solid fa-globe"></i></span>Eng</a></li>
-                <li class="inline-block mr-7 text-xl"><a href=""><span class="mr-2"><i class="fa-solid fa-user"></i></span>Login</a></li>
-                <li class="inline-block mr-7 text-xl"><a href=""><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
+      <nav id="navbar" class="border  shadow-lg sticky top-0">
+        <div class="flex flex-wrap justify-between container mx-auto items-center relative">
+            <!-- menu btn  -->
+             <button id="menu-button" class="hover:text-red-500 inline-block xl:hidden  px-1 xl:px-3 py-5 xl:text-lg text-sm" class=""><i class="fa-solid fa-bars mr-0"></i></button>
+            <!-- nav link  -->
+            <div class="nav-link hidden xl:block order-2   w-full xl:w-fit   xl:static  bg-gray-300 xl:bg-transparent rounded-sm">
+                <ul class="hidde py-3 px-2" id="menu">
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">সর্বশেষ</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">রাজনীতি</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">বাংলাদেশ</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">অপরাধ</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">বিশ্ব</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">বাণিজ্য</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">মতামত</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">খেলা</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">বিনোদন</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">চাকরি</a></li>
+                    <li class="lg:inline-block inline-block  2xl:mr-5  mr-3 xl:text-lg text-sm "><a href="" class="hover:text-red-500">জীবনযাপন</a></li> 
+                    <!-- <li class="inline-block inline-block lg:  px-1 xl:px-3 py-5 xl:text-lg text-sm  "><a href="" class="hover:text-red-500 " class=""><i class="fa-solid fa-bars mr-0"></i></a></li> -->
+
+                </ul>
+
+            </div>
+            <!-- action  -->
+            <div class="order-1 xl:order-3 action ">
+                <ul class="">
+                    <li class="inline-block px-1 xl:px-3 py-5 xl:text-lg text-sm border-s"><a href="" class="hover:text-red-500" class=""><i class="fa-solid fa-magnifying-glass mr-1"></i>খুঁজুন</a></li>
+                    <li class="inline-block px-1 xl:px-3 py-5 xl:text-lg text-sm border-s"><a href="" class="hover:text-red-500" class=""><i class="fa-regular fa-window-maximize mr-1"></i>ই-পেপার</a></li>
+                    <li class="inline-block px-1 xl:px-3 py-5 xl:text-lg text-sm border-s"><a href="" class="hover:text-red-500" class=""><i class="fa-solid fa-globe mr-1"></i>Eng</a></li>
+                    <li class="inline-block px-1 xl:px-3 py-5 xl:text-lg text-sm border-s border-e"><a href="" class="hover:text-red-500" class=""><i class="fa-solid fa-user mr-1"></i>Login</a></li>
+                </ul>
+            </div>
         </div>
       </nav>
      <!-- nav bar end -->
